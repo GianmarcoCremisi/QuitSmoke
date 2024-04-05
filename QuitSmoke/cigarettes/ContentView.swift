@@ -14,7 +14,7 @@ struct ContentView: View {
     @Binding var foreground: Color
     @Binding var gradient: LinearGradient
 
-    @State var op = 1.00
+    @AppStorage("opacity") var op: Double = 1.00
     @AppStorage("circle.progres") var count: Double = 0
    
     
